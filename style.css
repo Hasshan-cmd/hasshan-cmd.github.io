@@ -367,6 +367,9 @@ nav .fas {
         font-size: 16px;
         margin-right: 20px;
     }
+    .layer {
+        height: 100%;
+    }
     .btn {
         width: 100%;
         text-align: center;
