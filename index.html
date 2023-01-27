@@ -119,29 +119,41 @@
             <i class="fas fa-code"></i>
             <h2>Back-end Development</h2>
             <p>
-              Web application development is the creation of application
-              programs that reside on remote servers and are delivered to the
-              user's device over the Internet.
+              Back-end development refers to the server-side of web development,
+              which includes the underlying architecture and database management of a <span id="dots1">...</span><span id="more1">
+              website or application.
+              creating and maintaining the server-side of an application and ensuring that it integrates seamlessly with the front-end.
+              Use programming languages such as Java and PHP to build and maintain the back-end of a web application.
+              Also work with databases such as MySQL, and MongoDB to store and retrieve data for the application.</span>
             </p>
-            <a href="#">Learn more</a>
+            <a onclick="learnMore1()" id="learnMore1">Learn more</a>
           </div>
           <div>
             <i class="fas fa-crop-alt"></i>
             <h2>Front-end Development</h2>
             <p>
-              User experience encompasses all aspects of the end-user’s
-              interaction with the company, its services, and its products.
+              Front-end development refers to the client-side of web development, which includes the design
+              and interactivity of a website or application. <span id="dots2">...</span><span id="more2">
+              Creating the user interface and user experience of a website or application.
+              Use languages such as HTML, CSS, and JavaScript to build the layout, style, and interactive
+              elements of a website or application.
+              Also use frameworks such as React, Angular, and Vue.js to create interactive and responsive user interfaces.
+              Responsible for making sure the website or application is optimized for different devices and
+              browsers, and also for accessibility compliance.</span>
             </p>
-            <a href="#">Learn more</a>
+            <a onclick="learnMore2()" id="learnMore2">Learn more</a>
           </div>
           <div>
             <i class="fab fa-app-store"></i>
             <h2>Database Design & Development</h2>
             <p>
-              The difference between good app design and a poor one is usually
-              the quality of its user experience.
+              Database design and development is the process of creating and maintaining the databases that store, organize and
+              manage the data of a website or <span id="dots3">...</span><span id="more3">application. Database design involves creating a logical structure for the data,
+              including tables, fields, keys, and relationships between tables.
+              work with databases such as MySQL and MongoDB. writing SQL queries to create and manipulate tables, insert,
+              update and delete data, and retrieve data from the database.</span>
             </p>
-            <a href="#">Learn more</a>
+            <a onclick="learnMore3()" id="learnMore3">Learn more</a>
           </div>
         </div>
       </div>
@@ -360,5 +372,52 @@
         seeMore.innerHTML = "See Less";
       }
     });
+  </script>
+  <script>
+    function learnMore1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("learnMore1");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Learn more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Learn less";
+        moreText.style.display = "inline";
+      }
+    }
+    function learnMore2() {
+      var dots = document.getElementById("dots2");
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("learnMore2");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Learn more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Learn less";
+        moreText.style.display = "inline";
+      }
+    }
+    function learnMore3() {
+      var dots = document.getElementById("dots3");
+      var moreText = document.getElementById("more3");
+      var btnText = document.getElementById("learnMore3");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Learn more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Learn less";
+        moreText.style.display = "inline";
+      }
+    }
   </script>
 </html>
